@@ -177,8 +177,7 @@
 
   <!-- Lấy dữ liệu từ DB  -->
   <?php
-    $string = "lession";
-    $results = DB::select('SELECT * FROM lession where TypeLession = "Word"');
+    $results = DB::select('SELECT * FROM lession where TypeLession = "phrase"');
   ?>
     
     @include('layouts.header')
@@ -283,7 +282,7 @@
                                 <p>
                                     Vui lòng nhấn vào đây để xem chi tiết bài học
                                 </p>
-                                <a href="{{ route('words.show', ['name' => $row->name]) }}" type="button" class="read_more_btn">Read More</a>
+                                <a href="{{ route('phrases.show', ['name' => $row->name]) }}" type="button" class="read_more_btn">Read More</a>
                             </div>
                         </div>
                     <?php

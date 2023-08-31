@@ -3,7 +3,7 @@
     <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
       <h1>Never stop learning<br> because life never stop teaching</h1>
       <h2>Đừng bao giờ ngừng học tập vì cuộc đời không bao giờ ngừng dạy</h2>
-      <a href="courses.html" class="btn-get-started">Bắt đầu</a>
+      <a href="{{ url('/courses') }}" class="btn-get-started">Bắt đầu</a>
     </div>
   </section><!-- End Hero -->
 
@@ -29,7 +29,7 @@
               <li><i class="bi bi-lightbulb"></i> Truy cập chấm điểm thông minh</li>
             </ul>
 
-            <button type="button" class="btn btn-learn font-weight-bold">Thử Học và Kiểm tra</button>
+            <button onclick="window.location.href='{{ url('/courses') }}'" type="button" class="btn btn-learn font-weight-bold">Thử Học và Kiểm tra</button>
 
           </div>
         </div>
@@ -218,7 +218,7 @@
                   <h4>Học từ vựng</h4>
                 </div>
 
-                <h3><a href="course-details.html">Từ vựng</a></h3>
+                <h3><a href="{{ url('/words') }}">Từ vựng</a></h3>
                 <p>Học từ vựng theo từng chủ đề, giúp bạn có cái nhìn rộng hơn về một lĩnh vực</p>
               </div>
             </div>
@@ -232,7 +232,7 @@
                   <h4>Học cụm từ</h4>
                 </div>
 
-                <h3><a href="course-details.html">Cụm từ</a></h3>
+                <h3><a href="{{ url('/phrases') }}">Cụm từ</a></h3>
                 <p>Các cụm từ sẽ liên kết kiến thức học từ vựng của bạn</p>
               </div>
             </div>
@@ -246,7 +246,7 @@
                   <h4>Đọc báo</h4>
                 </div>
 
-                <h3><a href="course-details.html">Đọc báo theo từng cấp độ</a></h3>
+                <h3><a href="{{ url('/news') }}">Đọc báo theo từng cấp độ</a></h3>
                 <p>Đọc báo theo từng cấp độ từ dễ đến khó. Giúp người đọc nâng cao khả năng đọc theo nhiều hướng</p>
               </div>
             </div>

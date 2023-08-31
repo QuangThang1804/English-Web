@@ -4,12 +4,14 @@
 @include('layouts.header')
 <?php 
 use Illuminate\Support\Facades\DB;
+
+$results = DB::select('SELECT * FROM '. $name);
 ?>
 
 <main id="main" class="bg-light">
     <div class="contain mx-20" style="max-width: 42rem">
 
-      <h1 id="learning-title" class="text-uppercase text-2xl font-weight-bold pt-4 font-semibold" style="margin-top: 73px;">Section-11 Learning with ThangKuro</h1>
+      <h1 id="learning-title" class="text-uppercase text-2xl font-weight-bold pt-4 font-semibold" style="margin-top: 73px;"><?php echo $name ?> Learning with ThangKuro</h1>
       <p class="my-2 "><i class="fa fa-star" aria-hidden="true" style="color: #fcd34d;"></i> Cho sao đánh giá học
         phần này</p>
       <div class="contant">
@@ -19,7 +21,8 @@ use Illuminate\Support\Facades\DB;
           <li class="button-feature button bg-white p-2 rounded col-12 col-sm-6 my-2 shadow-sm "><i class="fa fa-book mr-2" style="color: #1864ab;"></i>Học</li>
           <li class="button-feature button bg-white p-2 rounded col-12 col-sm-6 my-2 shadow-sm "><i class="fa fa-clone mr-2" style="color: #1864ab;"></i>Ghép thẻ
           </li>
-          <li class="button-feature button bg-white p-2 rounded col-12 col-sm-6 my-2 shadow-sm "><i class="fa fa-braille mr-2" style="color: #1864ab;"></i>Kiểm tra
+          <li class="button-feature button bg-white p-2 rounded col-12 col-sm-6 my-2 shadow-sm"><i class="fa fa-braille mr-2" style="color: #1864ab;"></i>
+          <a href="{{ route('mltChoice_test.show', ['name' => $name]) }}" style="color: black">Kiểm tra</a>
           </li>
         </ul>
 
@@ -29,10 +32,10 @@ use Illuminate\Support\Facades\DB;
               <div class="flip-card" id="card">
                 <div class="flip-card-inner">
                   <div class="flip-card-front">
-                    <h2 class="word-front">Click to Flip</h2>
+                    <h2 class="word-front text-lowercase">Click to Flip</h2>
                   </div>
                   <div class="flip-card-back">
-                    <h2 class="word-back">Flipped Content</h2>
+                    <h2 class="word-back text-lowercase">Flipped Content</h2>
                   </div>
                 </div>
               </div>
@@ -73,9 +76,6 @@ use Illuminate\Support\Facades\DB;
         </nav>
 
         <div class="mb-4">
-          <?php 
-            $results = DB::select('SELECT * FROM section_1');
-            ?>
             <h2 class="text-xl font-semibold my-3">Thuật ngữ đã học trong học phần này (<?php echo count($results) ?>)</h2>
             
             <?php
@@ -85,9 +85,9 @@ use Illuminate\Support\Facades\DB;
 
               <div class="d-flex p-2 jutify-content-around bg-white my-2 border-gray-300 border-b-2  shadow-sm">
                 <p class="w-25 border-r-2 border-gray-300 mb-1" style="flex: 1 1 0%;border-right: 2px;
-                border-color: #dee2e6; margin-top: 8px;
+                border-color: #dee2e6;
                 border-style: solid;"><?php echo $row->english_word; ?></p>
-                <p class="w-50 ml-4"  style="flex: 1 1 0%; margin-top:8px"><?php echo $row->vietnamese_word; ?></p>
+                <p class="w-50 ml-4"  style="flex: 1 1 0%"><?php echo $row->vietnamese_word; ?></p>
               </div>
             <?php
             }

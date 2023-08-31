@@ -15,13 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 require_once 'frontend.php';
 
-use App\Http\Controllers\CoursesController;
+require_once 'courses.php';
 
-Route::get('/courses', [CoursesController::class, 'index'] ) -> name('courses');
-
-Route::get('/words', [CoursesController::class, 'words'] ) -> name('words');
-
-Route::get('/pharses', [CoursesController::class, 'pharses'] ) -> name('pharses');
-
-Route::get('/news', [CoursesController::class, 'news'] ) -> name('news');
+require_once 'word.php';
 
