@@ -212,7 +212,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch">
             <div class="course-item">
-              <img src="/img/course/Word.jpg" class="img-fluid" style="height: 200px" alt="...">
+              <img src="/img/course/wordImg.jpg" class="img-fluid" alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Học từ vựng</h4>
@@ -226,7 +226,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-md-0">
             <div class="course-item">
-              <img src="/img/course/pharse.jpg" class="img-fluid" style="height: 200px"  alt="...">
+              <img src="/img/course/phraseImg.jpg" class="img-fluid"  alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Học cụm từ</h4>
@@ -240,7 +240,7 @@
 
           <div class="col-lg-4 col-md-6 d-flex align-items-stretch mt-4 mt-lg-0">
             <div class="course-item">
-              <img src="/img/course/pharagraph.jpg" class="img-fluid" style="height: 200px"  alt="...">
+              <img src="/img/course/pharagraphImg.jpg" class="img-fluid"  alt="...">
               <div class="course-content">
                 <div class="d-flex justify-content-between align-items-center mb-3">
                   <h4>Đọc báo</h4>
