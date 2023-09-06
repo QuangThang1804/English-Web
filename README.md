@@ -64,3 +64,16 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 ## License
 
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
+
+## note
+những task chưa hoàn thành
+
+- login chưa vào được => done
+- lỗi mới: button avatar user bị lệch + đăng xuất lỗi font
+- register tương tự
+- tạo trang làm tự luận
+- khi làm trắc nghiệm còn lỗi, có thể sửa theo 2 hướng
++ khi chọn đưa ra đúng sai luôn (điểm yếu: có thể sai nma vẫn chọn lại và k hứng thú lắm)
++ khi chọn đáp án thì giữ nguyên, sau khi làm xog hết render ra điểm
+- transition button

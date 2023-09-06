@@ -198,7 +198,7 @@ h6 {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 10px 0 10px 30px;
+  /* padding: 10px 0 10px 30px; */
   font-family: 'Raleway';
   font-size: 15px;
   font-weight: 500;
@@ -241,6 +241,7 @@ h6 {
   min-width: 200px;
 }
 
+.navbar .dropdown ul button,
 .navbar .dropdown ul a {
   padding: 10px 20px;
   font-size: 14px;
@@ -1637,6 +1638,7 @@ a.animated-button:link, a.animated-button:visited {
 
 /* Thar Buttons */
 
+button.animated-button.thar-three,
 a.animated-button.thar-three {
 	color: #000;
 	cursor: pointer;
@@ -1644,17 +1646,23 @@ a.animated-button.thar-three {
 	position: relative;
 	transition: all 0.4s cubic-bezier(0.42, 0, 0.58, 1);
 }
+
+button.animated-button.thar-three:hover,
 a.animated-button.thar-three:hover {
   border: 2px solid #3752ed;
 	color: #fff !important; /* màu trắng */
 	background-color: transparent;
 	text-shadow: nthree;
 }
+
+button.animated-button.thar-three:hover::before,
 a.animated-button.thar-three:hover:before {
 	left: 0%;
 	right: auto;
 	width: 100%;
 }
+
+button.animated-button.thar-three::before,
 a.animated-button.thar-three:before {
 	display: block;
 	position: absolute;
