@@ -26,7 +26,7 @@ class AuthController extends Controller
         $user->save();
  
         // return back()->with('success', 'Register successfully');
-        return redirect('/login')->with('success', 'Register successfully');;
+        return redirect('/')->with('success', $request->name);;
     }
  
     public function login()
@@ -42,6 +42,7 @@ class AuthController extends Controller
         ];
  
         if (Auth::attempt($credetials)) {
+            
             return redirect('/')->with('success', 'Login Success');
         }
  
