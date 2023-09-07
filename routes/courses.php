@@ -15,7 +15,12 @@ Route::get('words/{name}', [CoursesController::class, 'showContentWord'] )->name
 
 Route::get('phrases/{name}', [CoursesController::class, 'showContentPhrase'] )->name('phrases.show');
 
+// Route::get('news/{id}/{level}', [CoursesController::class, 'showContentNews'] )->name('news.show');
+
 Route::get('news/{id}', [CoursesController::class, 'showContentNews'] )->name('news.show');
+
+Route::get('news/{id}/{level}', [CoursesController::class, 'showNewsLevel'] )->name('news.showLevel');
+
 
 
 

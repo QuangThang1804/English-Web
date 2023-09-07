@@ -1784,7 +1784,7 @@ a {
 }
 
 a:hover {
-  color: #86db9f;
+  /* color: #86db9f; */
   text-decoration: none;
 }
 

@@ -33,9 +33,18 @@ class CoursesController extends Controller
         return view('frontend.phrases.phraseContent', compact('name'));
     }
 
+    // public function showContentNews($id, $level)
+    // {
+    //     return view('frontend.news.newsContent', compact('id', 'level'));
+    // }
+
     public function showContentNews($id)
     {
         return view('frontend.news.newsContent', compact('id'));
+    }
+
+    public function showNewsLevel($id,$level) {
+        return view('frontend.news.newsContent', compact('id','level'));
     }
 }
 

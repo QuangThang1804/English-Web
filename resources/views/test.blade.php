@@ -168,9 +168,11 @@
 
                             <div class="flex -mx-3 buttonRegister">
                                 <div class="w-full px-3 mb-5">
-                                    <a href=""
+                                    <!-- <a href=""
                                         class="text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Đăng
-                                        ký ngay</a>
+                                        ký ngay</a> -->
+                                    <button class="btn btn-primary">Đăng ký</button>
+                                    
                                 </div>
                             </div>
 

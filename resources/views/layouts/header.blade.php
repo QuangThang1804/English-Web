@@ -20,8 +20,11 @@
 
           @if(Session::has('success'))
             <li class="dropdown">
-              <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
-                height="22" style="width:10%" alt="Avatar" loading="lazy" />
+              <div class="flex gap-3" style="width:200px">
+                <img src="https://mdbcdn.b-cdn.net/img/Photos/Avatars/img (31).webp" class="rounded-circle"
+                  height="22" style="width:10%" alt="Avatar" loading="lazy" />
+                <p class="mb-0 mt-1 font-bold">Phạm Quang Thăng</p>
+              </div>
               <ul>
                 <li><a class="btn btn-sm animated-button thar-three" href="">My profile</a></li>
                 <li><a class="btn btn-sm animated-button thar-three" href="">Settings</a></li>

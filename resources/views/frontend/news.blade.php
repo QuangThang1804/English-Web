@@ -283,7 +283,7 @@
                                 <p>
                                     Vui lòng nhấn vào đây để xem chi tiết bài học
                                 </p>
-                                <a href="{{ route('news.show', ['id' => $row->id]) }}" type="button" class="read_more_btn">Read More</a>
+                                <a href="{{ route('news.show', ['id' => $row->id, 'level' => 'lv1_']) }}" type="button" class="read_more_btn">Read More</a>
                             </div>
                         </div>
                     <?php

@@ -64,6 +64,9 @@
 
     <style>
         @import url('https://cdnjs.cloudflare.com/ajax/libs/MaterialDesign-Webfont/5.3.45/css/materialdesignicons.min.css');
+        button:hover {
+            color: white;
+        }
     </style>
 
     <div class="min-w-screen min-h-screen bg-slate-200 flex items-center justify-center px-5 py-5">
@@ -168,7 +171,7 @@
                                         <div
                                             class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                             <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                        <input type="name" name = "name" 
+                                        <input type="text" name = "name" id="name" required
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                             placeholder="Nguyễn Văn A">
                                     </div>
@@ -181,7 +184,7 @@
                                         <div
                                             class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                             <i class="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
-                                        <input type="email" name="email" id="emailRegister"
+                                        <input type="email" name="email" id="email" required
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                             placeholder="NguyenVanA@example.com">
                                     </div>
@@ -195,7 +198,7 @@
                                         <div
                                             class="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center">
                                             <i class="mdi mdi-lock-outline text-gray-400 text-lg"></i></div>
-                                        <input type="password" name="password" id="passwordRegister"
+                                        <input type="password" name="password"  id="password" required
                                             class="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-indigo-500"
                                             placeholder="************">
                                     </div>
@@ -217,15 +220,17 @@
 
                             <div class="flex -mx-3 buttonRegister">
                                 <div class="w-full px-3 mb-5">
-                                    <a href=""
+                                    <!-- <a href=""
                                         class="text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Đăng
-                                        ký ngay</a>
+                                        ký ngay</a> -->
+                                    <button class="btn btn-primary text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Đăng ký</button>
+                                    
                                 </div>
                             </div>
 
                             <div class="">
                                 <a href="{{ route('login') }}"
-                                        class="text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Bạn đã có tài khoản?</a>
+                                        class="btn text-center block w-full max-w-xs mx-auto bg-indigo-500 hover:bg-indigo-700 focus:bg-indigo-700 text-white rounded-lg px-3 py-3 font-semibold">Bạn đã có tài khoản?</a>
                                     
                             </div>
                         </div>
